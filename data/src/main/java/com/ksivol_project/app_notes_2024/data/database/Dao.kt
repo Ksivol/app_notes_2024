@@ -1,10 +1,11 @@
-package com.ksivol_project.app_notes_2024.data
+package com.ksivol_project.app_notes_2024.data.database
 
 import android.provider.ContactsContract.CommonDataKinds.Note
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.ksivol_project.app_notes_2024.data.entities.NoteData
 import kotlinx.coroutines.flow.Flow
 
 @Dao

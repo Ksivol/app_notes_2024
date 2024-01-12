@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "app_notes_2024"
 include(":app")
+include(":data")
+include(":domain")

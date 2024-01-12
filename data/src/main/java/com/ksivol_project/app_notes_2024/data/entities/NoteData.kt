@@ -1,4 +1,4 @@
-package com.ksivol_project.app_notes_2024.data
+package com.ksivol_project.app_notes_2024.data.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

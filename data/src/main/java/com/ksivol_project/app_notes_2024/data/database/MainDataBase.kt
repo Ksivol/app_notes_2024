@@ -1,9 +1,10 @@
-package com.ksivol_project.app_notes_2024.data
+package com.ksivol_project.app_notes_2024.data.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.ksivol_project.app_notes_2024.data.entities.NoteData
 
 
 @Database(entities = [NoteData::class], version = 1)
