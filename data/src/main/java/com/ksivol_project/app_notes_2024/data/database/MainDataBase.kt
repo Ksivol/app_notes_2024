@@ -10,7 +10,7 @@ import com.ksivol_project.app_notes_2024.data.entities.NoteData
 @Database(entities = [NoteData::class], version = 1)
 
 abstract class MainDataBase : RoomDatabase() {
-    abstract fun getDao(): Dao
+    abstract fun getDAO(): Dao
 
     companion object {
         @Volatile
