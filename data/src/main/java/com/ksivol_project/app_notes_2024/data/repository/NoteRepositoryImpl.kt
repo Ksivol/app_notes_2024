@@ -21,7 +21,7 @@ class NoteRepositoryImpl(private val noteStorage: NoteStorage) : NoteRepository 
         noteStorage.getNoteByDate()
     }
 
-    override suspend fun SearchNoteByName() {
+    override suspend fun searchNoteByName() {
         TODO("Not yet implemented")
     }
 

@@ -10,7 +10,7 @@ interface NoteRepository {
 
     suspend fun getNoteByDate()
 
-    suspend fun SearchNoteByName()
+    suspend fun searchNoteByName()
 
 
 }

@@ -10,5 +10,5 @@ interface NoteStorage {
 
     suspend fun getNoteByDate()
 
-    suspend fun SearchNoteByName()
+    suspend fun searchNoteByName()
 }
