@@ -1,6 +1,5 @@
 package com.ksivol_project.app_notes_2024.data.database
 
-import android.provider.ContactsContract.CommonDataKinds.Note
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -12,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 interface Dao {
 
     @Query("SELECT * FROM Notes WHERE dateStart >= :dateStart AND dateStart < :dateFinish")
-    fun getNoteByDate(dateStart: String, dateFinish: String): Flow<List<Note>>
+    fun getNoteByDate(dateStart: String, dateFinish: String): Flow<List<NoteData>>
 
     @Query("DELETE FROM Notes WHERE id = :id")
     suspend fun deleteNote(id: Int)

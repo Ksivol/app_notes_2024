@@ -1,4 +1,11 @@
 package com.ksivol_project.app_notes_2024.domain.usecase
 
-class SaveNoteUseCase {
+import com.ksivol_project.app_notes_2024.domain.entities.NoteDomain
+import com.ksivol_project.app_notes_2024.domain.repository.NoteRepository
+
+class SaveNoteUseCase(private val noteRepository: NoteRepository) {
+
+    suspend fun execute(note: NoteDomain) {
+        noteRepository.saveNote(note = note)
+    }
 }
