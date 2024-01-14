@@ -1,4 +1,4 @@
-package com.ksivol_project.app_notes_2024.activities
+package com.ksivol_project.app_notes_2024.app
 
 import android.app.Application
 import com.ksivol_project.app_notes_2024.data.database.MainDataBase
