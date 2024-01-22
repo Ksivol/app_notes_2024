@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 interface Dao {
 
     @Query("SELECT * FROM Notes WHERE dateStart >= :dateStart AND dateStart < :dateFinish")
-    fun getNoteByDate(dateStart: String, dateFinish: String): Flow<List<NoteData>>
+    fun getNoteByDate(dateStart: Long, dateFinish: Long): Flow<List<NoteData>>
 
     @Query("DELETE FROM Notes WHERE id = :id")
     suspend fun deleteNote(id: Int)

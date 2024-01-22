@@ -11,7 +11,7 @@ interface NoteRepository {
 
     suspend fun updateNote(note: NoteDomain)
 
-    fun getNoteByDate(dateStart: String, dateFinish: String): Flow<List<NoteDomain>>
+    fun getNoteByDate(dateStart: Long, dateFinish: Long): Flow<List<NoteDomain>>
 
     suspend fun searchNoteByName()
 

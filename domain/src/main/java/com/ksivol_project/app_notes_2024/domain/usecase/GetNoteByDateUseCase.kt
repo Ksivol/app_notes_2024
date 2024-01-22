@@ -7,10 +7,10 @@ import kotlinx.coroutines.flow.Flow
 
 class GetNoteByDateUseCase(private val noteRepository: NoteRepository) {
 
-    fun execute(note: NoteDomain): Flow<List<NoteDomain>> {
+    fun execute(date: Long): Flow<List<NoteDomain>> {
         return noteRepository.getNoteByDate(
-            dateStart = note.dateStart.toString(),
-            dateFinish = note.dateFinish.toString(),
+            dateStart = date,
+            dateFinish = date + 86400000,
         )
     }
 }

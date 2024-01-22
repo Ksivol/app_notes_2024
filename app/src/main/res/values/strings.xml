@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">app_notes_2024</string>
+    <string name="noNodes">Сегодня заметок нет</string>
+    <string name="timeText">Введите час</string>
+    <string name="titleText">Введите заголовок</string>
+    <string name="descriptionText">Введите текст заметки</string>
 </resources>

@@ -11,7 +11,7 @@ interface NoteStorage {
 
     suspend fun updateNote(note: NoteData)
 
-    fun getNoteByDate(dateStart: String, dateFinish: String): Flow<List<NoteData>>
+    fun getNoteByDate(dateStart: Long, dateFinish: Long): Flow<List<NoteData>>
 
     suspend fun searchNoteByName()
 
