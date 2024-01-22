@@ -19,7 +19,7 @@ class NoteStorageImpl(database: MainDataBase) : NoteStorage {
         dao.updateNote(note = note)
     }
 
-    override fun getNoteByDate(dateStart: String, dateFinish: String) =
+    override fun getNoteByDate(dateStart: Long, dateFinish: Long) =
         dao.getNoteByDate(
             dateStart = dateStart,
             dateFinish = dateFinish

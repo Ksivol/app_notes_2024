@@ -6,7 +6,6 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.ksivol_project.app_notes_2024.data.entities.NoteData
 
-
 @Database(entities = [NoteData::class], version = 1)
 
 abstract class MainDataBase : RoomDatabase() {
@@ -20,7 +19,7 @@ abstract class MainDataBase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     MainDataBase::class.java,
-                    "notes.db"
+                    "notesDatabase.db"
                 ).build()
                 INSTANCE = instance
                 instance

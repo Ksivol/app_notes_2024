@@ -1,5 +1,6 @@
 package com.ksivol_project.app_notes_2024.domain.entities
 
+import java.io.Serializable
 import java.sql.Timestamp
 
 data class NoteDomain(
@@ -17,4 +18,4 @@ data class NoteDomain(
 
 
     val description: String,
-)
+) : Serializable

@@ -11,10 +11,10 @@ data class NoteData(
     val id: Int?,
 
     @ColumnInfo(name = "dateStart")
-    val dateStart: Timestamp,
+    val dateStart: Long,
 
     @ColumnInfo(name = "dateFinish")
-    val dateFinish: Timestamp,
+    val dateFinish: Long,
 
     @ColumnInfo(name = "name")
     val name: String,
